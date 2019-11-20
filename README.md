@@ -8,6 +8,22 @@ Consiste, basicamente, de um player de vídeo que mostra a imagem da câmera.
 
 ![esboco](/documentação/esboco.png) 
 
+## Diagrama de Classes
+Para a interface gráfica, não foi criada nenhuma classe e não foi alterada nenhuma classe pré-existente do angular (AppModule, AppComponent, etc).
+
+Para o Rasp, está sendo usado o programa MJPG-streamer para gerar a URL com o stream de videos e outro programa é responsável pelo controle do servo e orientação da câmera.
+
+Para o controle do servo, foi pensado nessas 2 classes:
+
+![diagramaBackEnd](/documentação/diagramaClassesBck.png)
+
+E, para o frontend, pensando em exibir informações relevantes ao motorista (inicialmente pensados: orientação da câmera, velocidade do veículo, RPM do motor):
+
+![diagramaBackEnd](/documentação/diagramaClassesFrnt.png)
+
+### NOTA
+Por falta de material (servo, suporte da câmera, tela e sensor giroscópio), o projeto se encontra, no momento, funcionando apenas na parte de transmissão do que a camera captura.
+
 ## Como rodar
 ### Interface gráfica
 Ter o angular instadado (npm install angular-cli)
