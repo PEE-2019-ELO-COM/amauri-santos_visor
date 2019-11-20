@@ -24,6 +24,13 @@ E, para o frontend, pensando em exibir informações relevantes ao motorista (in
 ### NOTA
 Por falta de material (servo, suporte da câmera, tela e sensor giroscópio), o projeto se encontra, no momento, funcionando apenas na parte de transmissão do que a camera captura.
 
+## Fluxograma
+Como o código que roda no frontend não necessita de lógica (é apenas captura de dados e sua imediata exposição no html), temos que o fluxograma desse projeto pode ser resumido em:
+
+![diagramaBackEnd](/documentação/fluxograma.png)
+
+Que serve para reduzir movimentações desnecessárias da câmera.
+
 ## Como rodar
 ### Interface gráfica
 Ter o angular instadado (npm install angular-cli)
@@ -33,10 +40,10 @@ Ter o angular instadado (npm install angular-cli)
   
 - Acessar [localhost](localhost:4200). O padrão é rodar na porta 4200 (verificar terminal se realmente rodou nessa porta)
 
-### Servidor
+### Servo Ctrl
 Ter o python 3 instalado ([https://www.python.org/downloads/](https://www.python.org/downloads/))
 
 - Rodar o comando, na pasta:
-  > python3 app.py
+  > python3 app.py (AINDA NÃO DESENVOLVIDO)
   
 __*****AINDA EM DESENVOLVIMENTO*****__
