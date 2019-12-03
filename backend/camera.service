@@ -1,0 +1,11 @@
+[Unit]
+Description=MJPEG-streamer
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/start-camera.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
