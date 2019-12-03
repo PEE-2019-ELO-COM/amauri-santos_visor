@@ -37,9 +37,9 @@ Ter o angular instadado (npm install angular-cli)
 
 - Rodar o comando, na pasta do projeto, para rodar o servidor da interface (localhost:4200)
 
-'''bash
+```bash
 ng serve
-'''
+```
 
 - Acessar <a href="http://localhost:4200" target="blank">localhost (http://localhost:4200)</a>. O padrão é rodar na porta 4200 (verificar terminal se realmente rodou nessa porta)
 
@@ -49,24 +49,24 @@ Para o stream de vídeo foi utilizado o programa MJPG-Streamer que já captura a
 - Instalar o MJPG Streamer
 No seu raspberry rodar os comandos:
 
-'''bash
+```bash
 cd /home/pi
 git clone https://github.com/jacksonliam/mjpg-streamer.git
-'''
+```
 
 para baixar as dependências do MJPG-Streamer
 
-'''bash
+```bash
 sudo apt-get install cmake libjpeg8-dev
-'''
+```
 
 Compile o código:
 
-'''bash
+```bash
 cd mjpg-streamer/mjpg-streamer-experimental
 make
 sudo make install
-'''
+```
 
 Com isso, o seu rasp já pode rodar um stream na rede local
 
@@ -76,10 +76,10 @@ Para poder iniciar o stream de vídeo assim que o rasp é inicializado, é neces
 1. Extraia o arquivo start-camera.sh da pasta backend deste repositório para a pasta home/pi do seu rasp
 1. Extraia o arquivo camera.service para a pasta lib/systemd/system
 1. Rode os comandos
-'''bash
+```bash
 sudo systemctl enable start-camera.service
 sudo systemctl start start-camera.service
-'''
+```
 para poder ativar o serviço
 
 
@@ -94,8 +94,8 @@ Ter o python 3 instalado ([https://www.python.org/downloads/](https://www.python
 
 - Rodar o comando, na pasta:
 
-'''bash
+```bash
 python3 app.py (AINDA NÃO DESENVOLVIDO)
-'''
+```
   
 __*****AINDA EM DESENVOLVIMENTO*****__
